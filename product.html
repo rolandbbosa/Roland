@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twende goods</title>
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    
+<!--SIde navigation bar-->
+
+    <div class="sidenav">
+
+        <div class="top">
+          <b>Twende</b>
+        </div>
+    
+        <div class="sidebar">
+          <a href="home.html">Home</a>
+        </div>
+    
+        <div class="sidebar">
+          <a href="profile.html">Profile</a>
+        </div>
+    
+        <div class="sidebar">
+          <a href="orders.html">Orders</a>
+        </div>
+    
+        <div class="active">
+          <a href="product.html">Add product</a>
+        </div>
+
+        <div class="vplus"></div>
+    
+        <div class="nonebar">
+          <a href="#"><button>Upgrade plan</button></a>
+        </div>
+    </div>
+
+    <!--End of side nav-->
+
+
+    <!--Beginning of second main-->
+
+        
+        <div class="main">
+        
+        <!--start of top--> 
+          <div class="topbarp">
+            <div class="btn" id="popup"><b>+</b></div>
+
+            <div id="myModal" class="popbg">
+
+              <!-- Modal content -->
+              <div class="popcontent">
+              <span class="popclose">&times;</span>
+              <!--Add up-->
+
+              <div class="input-group" ng-app = "sampleApp" ng-controller= "adduserCtrl">
+
+              <form ng-submit="adduser()">
+
+              <input class="input" type="text" placeholder="Product name" class="product" id="Product" ng-model ="product" >
+              <input class="input" type="number" placeholder="Product price" class="price" id="Price" ng-model ="price" >
+              <input class="input" type="number" placeholder="Contact no." class="contact" id="Contact" ng-model ="contact" >
+              <input class="input" type="date" placeholder="Date of delivery" class="date" id="Date" ng-model ="date" >
+              <input class="input" type="time" id="Time">
+              <p><textarea placeholder="Discription" class="discription" id="Discription" ng-model ="discription" ></textarea></p>
+              <!--submit button-->
+              <p><button class="submitp" type="submit" value="Add User">+ Add product</button></p>
+              <!--end of submit button-->
+
+                  </form>
+                </div>
+              </div>
+
+
+             
+
+              </div>
+            </div>
+             <!--End of the top-->
+
+            <!--Next content-->
+
+
+            <!--productview-->
+            <div class="productsview">
+
+              <!--product up-->
+              <div class="productsell">
+
+                <!--image-->
+                <img class="productsellimg" src="images/twendeprofile.png">
+                 <!--end of the image-->
+
+                <!--paragraph-->
+                <p><div class="productpara">Product name</div></p>
+                <!--end of paragraph-->
+
+              </div>
+              <!--end of product up-->
+
+
+            </div>
+            <!--end of product view-->
+
+
+            <!--End of the content-->
+
+          </div>
+        </div>  
+
+    <!--End of second main-->
+
+    <script src="js/product.js"></script>
+</body>
+</html>
